@@ -1,6 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
+/* Botão */
+
+.btn{
+    border-radius: 4px;
+    display: inline-block;
+    padding: 16px 32px;
+    background-image: linear-gradient(to top, #ffbf00,#F2A50C);
+    color: #332200;
+    font-weight: 600;
+    font-size: 1.12rem;
+    font-family: 'Poppins','Arial','Roboto';
+}
+
+/* Cor */
+
+.marcacao{
+    color: #ffbb00;
+}
+
+.cor-paragrafo{
+    color:#b2b2b2;
+}
+
+.cor-w{
+    color: #fff;    
+}
+
 /* Font Family */
 
 .font-1{
