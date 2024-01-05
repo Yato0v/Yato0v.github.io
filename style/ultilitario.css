@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+/* Botão */
+
+.btn{
+    border-radius: 4px;
+    display: inline-block;
+    padding: 16px 32px;
+    background-image: linear-gradient(to top, #ffbf00,#F2A50C);
+    color: #332200;
+    font-weight: 600;
+    font-size: 1.12rem;
+    font-family: 'Poppins','Arial','Roboto';
+}
+
+/* Cor */
+
+.marcacao{
+    color: #ffbb00;
+}
+
+.cor-paragrafo{
+    color:#b2b2b2;
+}
+
+.cor-w{
+    color: #fff;    
+}
+
+/* Font Family */
+
+.font-1{
+    font-family: 'Poppins','Arial','Roboto';
+}
+
+.font-2{
+    font-family: 'Roboto','Arial','Roboto';
+}
+
+/* Font Size e Weight Poppins */
+
+.font-1-xxl{
+    font-weight: 600;
+    font-size: 4rem;
+}
+
+.font-1-xl{
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.font-1-l{
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.font-1-m{
+    font-weight: 400;
+    font-size: 1.12rem;
+}
+
+.font-1-m-b{
+    font-weight: 600;
+    font-size: 1.12rem;
+}
+
+.font-1-s{
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.font-1-xs{
+    font-weight: 600;
+    font-size: 0.75rem;
+}
+
+/* Font Size e Weight Roboto */
+
+.font-2-l{
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.font-2-l-b{
+    font-weight: 500;
+    font-size: 1.5;
+    text-transform: uppercase;
+}
+
+.font-2-m{
+    font-weight: 500;
+    font-size: 1.12rem;
+}
+
+.font-2-s{
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.font-2-xs{
+    font-weight: 400;
+    font-size: 0.87rem;
+}

@@ -1,0 +1,135 @@
+:root{
+    --cor-p1: #ffbb00;
+    --cor-p2: #e4a30b;
+    --cor-p3: #a66f00;
+    --cor-p4: #664400;
+    --cor-p5: #332200;
+    --cor-c12: #000;
+    --cor-c11: #111;
+    --cor-c10: #2e2e2e;
+    --cor-c8: #404040;
+    --cor-c8: #595959;
+    --cor-c7: #717171;
+    --cor-c6: #9c9c9c;
+    --cor-c5: #b2b2b2;
+    --cor-c4: #ccc;
+    --cor-c3: #dedede;
+    --cor-c2: #ededed;
+    --cor-c1: #f7f7f7;
+    --cor-w: #fff;
+    --space-1: 4px;
+    --space-2: 8px;
+    --space-3: 12px;
+    --space-4: 16px;
+    --space-5: 20px;
+    --space-6: 24px;
+    --space-7: 32px;
+    --space-8: 36px;
+    --space-9: 40px;
+    --space-10: 48px;
+    --space-11: 60px;
+    --space-12: 72px;
+    --space-13: 80px;
+    --space-14: 120px;
+    --space-15: 160px;
+    --space-16: 200px;
+}
+
+header{
+    background-color: var(--cor-c12);
+    /* width: 100%; */
+}
+
+.header-nav{
+    display: flex;
+    height: var(--space-13);
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 550px;
+    padding: 0px var(--space-15);
+}
+
+ul a{
+color: var(--cor-w);
+}
+
+.header-nav a::after{
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0%;
+    margin-top: 4px;
+    background-color: var(--cor-w);
+}
+
+.header-nav a:hover:after{
+    width: 100%;
+    transition: 0.3s;
+}
+
+nav ul{
+    display: flex;
+    gap: var(--space-9);
+}
+
+@media (max-width: 1470px){
+    .header-nav{
+        justify-content: space-between;
+        gap: 0px;
+    }
+}
+
+@media (max-width:890px){
+ .header-nav{
+    /* display: none; */
+    flex-direction: column;
+    gap: var(--space-2);
+    justify-content: center;
+ }
+
+}
+
+/* Estilo sobre */
+
+.sobre-bike {
+    background-color: var(--cor-c12);
+    height: 680px;
+    width: 100%;
+}
+
+.sobre-conteudo{
+    padding: 0px var(--space-13) 0px var(--space-15);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px 40px;
+    /* grid-template-rows: auto; */
+}
+
+.sobre-conteudo img{
+    grid-column: 2;
+    grid-row: 1/-1;
+}
+
+.texto-sobre{
+    grid-row: 1;
+    align-self: center;
+}
+
+.texto-sobre p{
+    margin-bottom: var(--space-7);
+    
+}
+
+@media (max-width: 800px){
+
+    .sobre-bike{
+        height: 550px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .bike-preta{
+        display: none;
+    }
+    
+}
