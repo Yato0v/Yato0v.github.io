@@ -95,6 +95,7 @@ nav ul{
     background-color: var(--cor-c12);
     height: 680px;
     width: 100%;
+    margin-bottom: var(--space-15);
 }
 
 .sobre-conteudo{
@@ -132,4 +133,21 @@ nav ul{
         display: none;
     }
     
+}
+
+.produtos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    padding: var(--space-11);
+    gap: var(--space-9);
+}
+
+.produtos h1{
+    grid-column: 1/-1;
+    padding-left: 100px;
+}
+
+.produtos-items{
+    grid-row: 2;
 }
