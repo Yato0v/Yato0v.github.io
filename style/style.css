@@ -178,6 +178,7 @@ nav ul{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 60px;
+    margin-bottom: 120px;
 }
 
 .tecnologia-info{
@@ -212,4 +213,41 @@ nav ul{
 
 h2.sublinhado::after{
     width: 195px;
+}
+
+/* Parceiros */
+
+.parceirias{
+    margin: 0px 100px;
+    margin-bottom: 120px;
+}
+
+.parceirias h1{
+    margin-left: 60px;
+    margin-bottom: 60px;
+}
+
+.parceiros-item{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: 0 auto;
+}
+
+.parceiros-item li{
+    display: flex;
+    padding: 32px;
+    border-left: 2px solid var(--cor-c2);
+}
+
+.parceiros-item li:first-child,
+.parceiros-item li:nth-child(5){
+    border-left: none;
+}
+
+.parceiros-item li:nth-child(n + 5){
+    border-top: 2px solid var(--cor-c2);
+}
+
+.parceiros-item  img{
+    margin: auto;
 }
