@@ -121,6 +121,20 @@ nav ul{
     
 }
 
+.produtos-item h3{
+    display: flex;
+    align-items: center;
+}
+
+.produtos-item h3::before{
+    content: "";
+    display: inline-block;
+    background-color: var(--cor-p1);
+    height: 8px;
+    width: 12px;
+    margin-right: 8px;
+}
+
 @media (max-width: 800px){
 
     .sobre-bike{
@@ -164,7 +178,6 @@ nav ul{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 60px;
-    margin-bottom: 6000px;
 }
 
 .tecnologia-info{
