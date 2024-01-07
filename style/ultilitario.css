@@ -14,6 +14,15 @@
     font-family: 'Poppins','Arial','Roboto';
 }
 
+.sublinhado::after{
+    content: "";
+    display: block;
+    height: 3px;
+    width: 100%;
+    margin-top: 4px;
+    background-color: #ffbb00;
+}
+
 /* Cor */
 
 .marcacao{
@@ -88,7 +97,7 @@
 
 .font-2-l-b{
     font-weight: 500;
-    font-size: 1.5;
+    font-size: 1.5rem;
     text-transform: uppercase;
 }
 

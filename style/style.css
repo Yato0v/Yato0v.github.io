@@ -135,12 +135,16 @@ nav ul{
     
 }
 
+
+/*Produtos*/
+
 .produtos{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto 1fr;
     padding: var(--space-11);
     gap: var(--space-9);
+    margin-bottom: var(--space-14);
 }
 
 .produtos h1{
@@ -150,4 +154,49 @@ nav ul{
 
 .produtos-items{
     grid-row: 2;
+}
+
+/* Tecnologia*/
+
+.tecnologia{
+    box-shadow: inset 0px 120px var(--cor-w), inset 0px -120px var(--cor-w);
+    background-color: var(--cor-c11);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    margin-bottom: 6000px;
+}
+
+.tecnologia-info{
+    padding-top: 160px;
+    padding-bottom: 160px;
+    padding-left: var(--space-15);
+}
+
+.info-tec{
+    display: flex;
+    gap: 40px;
+}
+
+.tecnologia-info h1, p{
+    margin-bottom: 20px;
+}
+
+.line{
+    line-height: 62px;
+    margin-bottom: 32px;
+}
+
+.tecnologia-info h2{
+    margin-bottom: 80px;
+} 
+
+.info-tec-items{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+h2.sublinhado::after{
+    width: 195px;
 }
