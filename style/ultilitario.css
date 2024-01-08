@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&display=swap');
 
 /* Botão */
 
-.btn{
+.btn,
+.btn-2{
     border-radius: 4px;
     display: inline-block;
     padding: 16px 32px;
@@ -12,6 +14,12 @@
     font-weight: 600;
     font-size: 1.12rem;
     font-family: 'Poppins','Arial','Roboto';
+    text-transform: uppercase;
+}
+
+.btn-2{
+    background-image: linear-gradient(to bottom, #404040,#2e2e2e);
+    color: #ccc;
 }
 
 .sublinhado::after{
@@ -37,6 +45,10 @@
     color:#b2b2b2;
 }
 
+.prata{
+    color: #9c9c9c;
+}
+
 .cor-w{
     color: #fff;    
 }
@@ -49,6 +61,10 @@
 
 .font-2{
     font-family: 'Roboto','Arial','Roboto';
+}
+
+.font-3{
+    font-family: 'Merriweather','Poppins','Arial','Roboto';
 }
 
 /* Font Size e Weight Poppins */
