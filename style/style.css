@@ -137,9 +137,16 @@ nav ul{
     margin-bottom: 120px;
 }
 
-@media (max-width: 1010px){
+@media (max-width: 1050px){
     .sobre-conteudo{
         padding: 0px var(--space-9) 0px var(--space-13);
+        padding: 0px 25px;
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .botao{
+        margin-bottom: 0px;
     }
 }
 @media (max-width: 800px){
@@ -476,7 +483,7 @@ h2.sublinhado::after{
 }
 
 .seguro-planos{
-    padding: 60px 120px 0px 120px;
+    padding: 60px 120px 20px 120px;
 }
 
 .seguro-planos h1{
@@ -539,6 +546,7 @@ h2.sublinhado::after{
 @media (max-width: 1250px){
     .seguro-planos{
         grid-template-columns: auto;
+        padding-bottom: 20px;
     }
 
     .tipo-plano{
@@ -554,6 +562,10 @@ h2.sublinhado::after{
 
     .planos{
         flex-direction: column;
+    }
+
+    .seguro-planos{
+        padding-bottom: 20px;
     }
 
     .planos-item{
