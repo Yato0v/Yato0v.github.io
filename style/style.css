@@ -73,6 +73,13 @@ nav ul{
     gap: var(--space-9);
 }
 
+@media (max-width:930px){
+    .header-nav{
+        padding: 0px var(--space-13);
+    }
+
+}
+
 @media (max-width:890px){
  .header-nav{
     flex-direction: column;
@@ -560,13 +567,17 @@ h2.sublinhado::after{
     }
 }
 
-@media (max-width: 430px){
+@media (max-width: 460px){
 
     .tipo-plano{
         display: flex;
         flex-direction: column;
         gap: 0px;
         margin-bottom: 0px;
+    }
+
+    .planos-item{
+        padding: 10px;
     }
 
     .seguro-planos{
