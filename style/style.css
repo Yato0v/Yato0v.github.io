@@ -282,9 +282,22 @@ h2.sublinhado::after{
         margin-bottom: 30px;
     }
 
+    .info-tec{
+        flex-direction: column;
+    }
+
     .tecnologia{
         box-shadow: none;
         grid-template-columns: 1fr;
+    }
+
+    .line{
+        font-size: 2.5rem;
+        line-height: 1.125;
+    }
+
+    .paragrafo-tec{
+        font-size: 1rem;
     }
 
     .ft-tec{
@@ -405,7 +418,7 @@ h2.sublinhado::after{
 }
 
 .frase-item blockquote{
-    max-width: 22ch;
+    max-width: 32ch;
     margin-bottom: 16px;
 }
 
@@ -425,6 +438,10 @@ h2.sublinhado::after{
         padding: 20px;
         align-self: start;
     }
+
+    .frase-item blockquote{
+        font-size: 2rem;
+    }
 }
 
 @media (max-width:780px){
@@ -439,6 +456,12 @@ h2.sublinhado::after{
     }
 }
 
+
+@media (max-width:460px){
+    .frase-item blockquote{
+        font-size: 1.5rem;
+    }
+}
 /* Seguros */
 
 .seguro{
@@ -542,13 +565,25 @@ h2.sublinhado::after{
     }
 }
 
-@media (max-width: 300px){
+@media (max-width: 430px){
 
     .tipo-plano{
         display: flex;
         flex-direction: column;
         gap: 0px;
         margin-bottom: 0px;
+    }
+
+    .seguro-planos{
+        padding: 0px;
+    }
+
+    .seguro-planos h1{
+        padding-left: 20px;
+    }
+
+    .planos-item{
+        width: 200px;
     }
 
     .mensal{
