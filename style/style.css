@@ -534,10 +534,6 @@ h2.sublinhado::after{
         grid-template-columns: auto;
     }
 
-    .planos{
-        width: 400px;
-    }
-
     .tipo-plano{
         gap: 150px;
     }
@@ -551,7 +547,6 @@ h2.sublinhado::after{
 
     .planos{
         flex-direction: column;
-        width: 400px;
     }
 
     .planos-item{
@@ -580,10 +575,6 @@ h2.sublinhado::after{
 
     .seguro-planos h1{
         padding-left: 20px;
-    }
-
-    .planos-item{
-        width: 200px;
     }
 
     .mensal{
