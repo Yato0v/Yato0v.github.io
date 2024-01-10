@@ -8,3 +8,20 @@
 span{
     display: block;
 }
+
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+img[src$=".jpg"]{
+    border-radius: 5px;
+}
+
+@media(max-width:300px){
+    html{
+        font-size: 0.7rem;
+        padding: 0px;
+    }
+}

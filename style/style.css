@@ -44,9 +44,9 @@ header{
     display: flex;
     height: var(--space-13);
     align-items: center;
-    /* justify-content: space-between; */
-    gap: 550px;
+    justify-content: space-between;
     padding: 0px var(--space-15);
+    max-width: 1250px;
 }
 
 ul a{
@@ -60,6 +60,7 @@ color: var(--cor-w);
     width: 0%;
     margin-top: 4px;
     background-color: var(--cor-w);
+    transition: 0.3s;
 }
 
 .header-nav a:hover:after{
@@ -72,16 +73,8 @@ nav ul{
     gap: var(--space-9);
 }
 
-@media (max-width: 1470px){
-    .header-nav{
-        justify-content: space-between;
-        gap: 0px;
-    }
-}
-
 @media (max-width:890px){
  .header-nav{
-    /* display: none; */
     flex-direction: column;
     gap: var(--space-2);
     justify-content: center;
@@ -89,12 +82,17 @@ nav ul{
 
 }
 
+
+@media (max-width: 595px){
+    .header-nav{
+        padding: 0px;
+    }    
+}
+
 /* Estilo sobre */
 
-.sobre-bike {
+.sobre-bike{
     background-color: var(--cor-c12);
-    height: 680px;
-    width: 100%;
     margin-bottom: var(--space-15);
 }
 
@@ -102,23 +100,92 @@ nav ul{
     padding: 0px var(--space-13) 0px var(--space-15);
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 0px 40px;
-    /* grid-template-rows: auto; */
+    gap: 40px;
+}
+
+.sobre-bike-imagem{
+    margin-bottom: -120px;
 }
 
 .sobre-conteudo img{
+    width: 100%;
     grid-column: 2;
     grid-row: 1/-1;
+    border-radius: 0px 0px 5px 5px;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
 }
 
 .texto-sobre{
     grid-row: 1;
     align-self: center;
+    margin: auto;
 }
 
 .texto-sobre p{
     margin-bottom: var(--space-7);
-    
+}
+.botao{
+    margin-bottom: 120px;
+}
+
+@media (max-width: 1010px){
+    .sobre-conteudo{
+        padding: 0px var(--space-9) 0px var(--space-13);
+    }
+}
+@media (max-width: 800px){
+    .sobre-conteudo{
+        padding: 0px 25px;
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .botao{
+        margin-bottom: 0px;
+    }
+
+    .sobre-conteudo img{
+        width: 100%;
+        height: 300px;
+        border-radius: 5px;
+    }
+
+}
+
+/*Produtos*/
+
+.produtos ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    padding: var(--space-11);
+    gap: var(--space-9);
+    margin-bottom: var(--space-14);
+    overflow-x: auto;
+}
+
+.produtos ul a{
+    display: block;
+    color: #000;
+}
+
+.produtos ul li{
+    min-width: 280px;
+}
+
+.produtos ul img{
+    margin-bottom: 16px;
+}
+
+.produtos h1{
+    grid-column: 1/-1;
+    padding-left: 100px;
+}
+
+.produtos-items{
+    grid-row: 2;
 }
 
 .produtos-item h3{
@@ -131,43 +198,26 @@ nav ul{
     display: inline-block;
     background-color: var(--cor-p1);
     height: 8px;
-    width: 12px;
+    width: 13px;
     margin-right: 8px;
+    transition: 0.3s;
 }
 
-@media (max-width: 800px){
+.produtos-item a:hover h3::before{
+    width: 25px;
+    transition: 0.3s;
+}
 
-    .sobre-bike{
-        height: 550px;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-    }
+@media (max-width:800px){
 
-    .bike-preta{
-        display: none;
+    .produtos h1{
+        padding: 25px;
     }
     
-}
-
-
-/*Produtos*/
-
-.produtos{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto 1fr;
-    padding: var(--space-11);
-    gap: var(--space-9);
-    margin-bottom: var(--space-14);
-}
-
-.produtos h1{
-    grid-column: 1/-1;
-    padding-left: 100px;
-}
-
-.produtos-items{
-    grid-row: 2;
+    .produtos ul{
+        padding: 25px;
+        gap: 20px;
+    }
 }
 
 /* Tecnologia*/
@@ -179,6 +229,15 @@ nav ul{
     grid-template-columns: 1fr 1fr;
     gap: 60px;
     margin-bottom: 120px;
+}
+
+.ft-tec img{
+    width: 100%;
+    border-radius: 0px;
+    object-fit: cover;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
 }
 
 .tecnologia-info{
@@ -214,6 +273,44 @@ nav ul{
 
 h2.sublinhado::after{
     width: 195px;
+}
+
+@media (max-width:800px){
+    .tecnologia-info h1,
+    .tecnologia-info h2,
+    .paragrafo-tec{
+        margin-bottom: 30px;
+    }
+
+    .tecnologia{
+        box-shadow: none;
+        grid-template-columns: 1fr;
+    }
+
+    .ft-tec{
+        display: none;
+    }
+
+    .tecnologia-info{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+    }
+}
+
+@media (max-width:300px){
+    .tecnologia-info{
+        padding: 20px 20px;
+        width: 200px;
+    }
+
+    .line{
+        word-wrap: break-word;
+    }
+
+    .info-tec{
+        flex-direction: column;
+    }
 }
 
 /* Parceiros */
@@ -253,6 +350,29 @@ h2.sublinhado::after{
     margin: auto;
 }
 
+@media (max-width:800px){
+    .parceirias{
+        margin: 0px;
+        padding: 0px 20px;
+    }
+
+    .parceirias h1{
+        margin: 0px 0px 20px 0px;
+    }
+
+    .parceiros-item{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .parceiros-item li:nth-child(odd){
+        border-left: none;
+    }
+
+    .parceiros-item li:nth-child(n + 3){
+        border-top: 2px solid var(--cor-c2);
+    }
+}
+
 /* Frase */
 
 .frase{
@@ -270,6 +390,13 @@ h2.sublinhado::after{
     color: var(--cor-p4);
 }
 
+.ft-frase img{
+    border-radius: 0px;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+}
+
 .frase-item{
     padding: 40px 40px 80px 80px;
     align-self: end;
@@ -284,6 +411,32 @@ h2.sublinhado::after{
 
 .frase img{
     height: 100%;
+}
+
+@media (max-width:920px){
+    .frase-item{
+        padding: 20px;
+        align-self: center;
+    }
+}
+
+@media (max-width:800px){
+    .frase-item{
+        padding: 20px;
+        align-self: start;
+    }
+}
+
+@media (max-width:780px){
+
+    .ft-frase{
+        height: 300px;
+    }
+
+    .frase{
+        grid-template-columns: 1fr;
+        padding-bottom: 10px;
+    }
 }
 
 /* Seguros */
@@ -353,6 +506,55 @@ h2.sublinhado::after{
     box-shadow: inset 0px -90px var(--cor-c11)
 }
 
+@media (max-width: 1250px){
+    .seguro-planos{
+        grid-template-columns: auto;
+    }
+
+    .planos{
+        width: 400px;
+    }
+
+    .tipo-plano{
+        gap: 150px;
+    }
+
+    .plano-prata{
+        box-shadow: none;
+    }
+}
+
+@media (max-width: 1050px){
+
+    .planos{
+        flex-direction: column;
+        width: 400px;
+    }
+
+    .planos-item{
+        margin-bottom: 0px;
+    }
+}
+
+@media (max-width: 800px){
+    .seguro-planos{
+        padding: 20px;
+    }
+}
+
+@media (max-width: 300px){
+
+    .tipo-plano{
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        margin-bottom: 0px;
+    }
+
+    .mensal{
+        display: none;
+    }
+}
 /* Footer */
 
 footer{
@@ -379,10 +581,6 @@ footer{
     margin: 16px 0px;
 }
 
-/* .contato-item ul li:nth-child(even){
-    margin-bottom: 32px;
-} */
-
 .contato-item-foto ul{
     display: flex;
     gap: 25px;
@@ -392,6 +590,23 @@ footer{
     margin-bottom: 10px;
 }
 
+.content-footer img{
+    max-width: none;
+}
+
 .copy{
     padding:  0px var(--space-14) 32px var(--space-14);
+}
+
+@media(max-width:900px){
+    .content-footer{
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+@media (max-width:800px){
+    .content-footer{
+        padding: 20px;
+    }
 }
