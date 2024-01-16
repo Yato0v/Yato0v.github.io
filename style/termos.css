@@ -1,0 +1,22 @@
+.termos h1{
+    margin-bottom: 20px;
+}
+
+.termos{
+    padding: 120px 160px 120px 160px;
+}
+
+.termos li{
+    max-width: 75ch;
+    margin-bottom: 20px;
+}
+
+.termos ul{
+    margin-bottom: 30px;
+}
+
+@media (max-width:800px){
+    .termos{
+        padding: 60px 20px;
+    }
+}

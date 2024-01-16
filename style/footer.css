@@ -1,0 +1,65 @@
+
+footer{
+    background-color: var(--cor-c12);
+}
+
+.content-footer{
+    padding:  60px var(--space-15) 80px var(--space-14);
+    display: flex;
+    gap: 165px;
+    margin-bottom: 80px;
+}
+
+.content-footer h3{
+    margin-bottom: 32px;
+}
+
+.contato-item ul li:nth-child(even):after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #111;
+    margin: 16px 0px;
+}
+
+.contato-item-foto ul{
+    display: flex;
+    gap: 25px;
+}
+
+.informacoes li{
+    margin-bottom: 10px;
+}
+
+.content-footer img{
+    max-width: none;
+}
+
+.informacoes a:hover{
+    color: #9c9c9c;
+}
+
+.copy{
+    padding:  0px var(--space-14) 32px var(--space-14);
+}
+
+@media(max-width:950px){
+    .content-footer{
+        flex-direction: column;
+        gap: 30px;
+        padding-left: 160px;
+    }
+}
+
+@media(max-width:930px){
+    .content-footer{
+        padding-left: 80px;
+    }
+}
+
+@media (max-width:800px){
+    .content-footer{
+        padding: 20px;
+    }
+}
