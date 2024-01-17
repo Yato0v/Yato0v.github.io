@@ -12,6 +12,55 @@
     gap: 40px;
 }
 
+.perguntas-c{
+    margin: 120px 20px;
+}
+
+.perguntas-c dl{
+    padding-top: 85px;
+}
+
+.perguntas-c dl > div{
+    padding: 40px;
+    border-radius: 5px;
+}
+
+.perguntas-c dl > div:nth-child(odd){
+    background-color: #f1f1f1;
+}
+
+.perguntas-c dt{
+    display: grid;
+    margin-bottom: 15px;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.perguntas-c dt:hover:after{
+    transform: rotate(180deg);
+}
+
+.perguntas-c dt::before{
+    content: "";
+    display: inline-block;
+    background-color: #ffbb00;
+    margin-right: 5px;
+    height: 8px;
+    width: 12px;
+}
+
+.perguntas-c dt::after{
+    content: "";
+    display: inline-block;
+    background-image: url(../img/icones/seta-abrir.svg);
+    margin-right: 5px;
+    height: 6px;
+    width: 14px;
+    transition: 0.3s;
+}
+
 @media (max-width:930px){
     .vantagens-seguro-c{
         padding: 60px 20px;
