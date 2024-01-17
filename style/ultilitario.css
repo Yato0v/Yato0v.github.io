@@ -4,6 +4,12 @@
 
 /* Botão */
 
+.container{
+    box-sizing: border-box;
+    max-width: 1200px;
+    margin: auto;
+}
+
 .btn,
 .btn-2{
     border-radius: 4px;
@@ -33,6 +39,14 @@
 }
 
 /* Cor */
+
+.cor-b{
+    background-color: #000;
+}
+
+.cor-bg{
+    background-color: #111;
+}
 
 .marcacao{
     color: #ffbb00;

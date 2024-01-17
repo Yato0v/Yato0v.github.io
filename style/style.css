@@ -212,9 +212,14 @@
     margin-bottom: 32px;
 }
 
-.tecnologia-info h2{
+.tecnologia-info a{
+    display: inline-block;
     margin-bottom: 80px;
 } 
+
+.tecnologia-info a:hover{
+    color: #f7f7f7;
+}
 
 .info-tec-items{
     display: flex;
