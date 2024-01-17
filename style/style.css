@@ -515,6 +515,12 @@ h2.sublinhado::after{
     }
 }
 
+@media (max-width:930px){
+    .seguro-planos h1{
+        font-size: 3rem;
+    }
+}
+
 @media (max-width: 800px){
     .seguro-planos{
         padding: 20px;

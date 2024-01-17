@@ -1,0 +1,29 @@
+.vantagens-seguro-c{
+    padding: 120px 20px;
+}
+
+.vantagens-seguro-c h1{
+    margin-bottom: 90px;
+}
+
+.todas-vantagens-seguro ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+@media (max-width:930px){
+    .vantagens-seguro-c{
+        padding: 60px 20px;
+    }
+    
+    .vantagens-seguro-c h1{
+        font-size: 3rem;
+    }
+}
+
+@media (max-width:650px){
+    .todas-vantagens-seguro ul{
+        grid-template-columns: 1fr 1fr;
+    }
+}
