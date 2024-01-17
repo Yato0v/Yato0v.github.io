@@ -66,7 +66,8 @@
         padding: 60px 20px;
     }
     
-    .vantagens-seguro-c h1{
+    .vantagens-seguro-c h1,
+    .perguntas-c h2{
         font-size: 3rem;
     }
 }
