@@ -5,6 +5,10 @@
     list-style: none;
 }
 
+button{
+    border: none;
+}
+
 span{
     display: block;
 }
