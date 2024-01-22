@@ -132,3 +132,10 @@
         grid-column: 1;
     }
 }
+
+@media (max-width:380px){
+    .contato-formulario,
+    .contato-info{
+        margin: 0px;
+    }
+}
