@@ -1,10 +1,10 @@
 .orcamento{
+    padding: 20px;
     background-color: #111;
     box-shadow: inset 0px -550px #f7f7f7;
 }
 
 .orcamento-c{
-    margin:0px 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-bottom: 120px;
