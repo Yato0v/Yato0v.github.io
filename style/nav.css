@@ -25,9 +25,9 @@ color: var(--cor-w);
     transition: 0.3s;
 }
 
-.header-nav a:hover:after{
+.linkss a:hover::after,
+.linkss a.ativo::after{
     width: 100%;
-    transition: 0.3s;
 }
 
 nav ul{
